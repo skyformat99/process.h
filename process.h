@@ -34,24 +34,11 @@
 #define SHEREDOM_PROCESS_H_INCLUDED
 
 #if defined(_MSC_VER)
-#if defined(_M_IX86)
-#define _X86_
-#endif
-
-#if defined(_M_AMD64)
-#define _AMD64_
-#endif
-
 #pragma warning(push, 1)
-#include <IntSafe.h>
-#include <WinDef.h>
-#include <handleapi.h>
 #include <io.h>
 #include <malloc.h>
-#include <namedpipeapi.h>
-#include <processthreadsapi.h>
 #include <stdio.h>
-#include <synchapi.h>
+#include <Windows.h>
 #pragma warning(pop)
 #endif
 
