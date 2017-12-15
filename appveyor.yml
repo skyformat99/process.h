@@ -28,4 +28,4 @@ build_script:
   - if "%PLATFORM%"=="Win32" cmake -G "%VSVERSION%" ../test
   - msbuild /m /p:Configuration="%CONFIGURATION%" /p:Platform="%PLATFORM%" process.sln
   - cd %CONFIGURATION%
-  - utest_test.exe
+  - process_test.exe
