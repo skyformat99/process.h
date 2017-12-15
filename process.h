@@ -33,8 +33,6 @@
 #ifndef SHEREDOM_PROCESS_H_INCLUDED
 #define SHEREDOM_PROCESS_H_INCLUDED
 
-#include <stdio.h>
-
 #if defined(_MSC_VER)
 #if defined(_M_IX86)
 #define _X86_
@@ -52,6 +50,7 @@
 #include <malloc.h>
 #include <namedpipeapi.h>
 #include <processthreadsapi.h>
+#include <stdio.h>
 #include <synchapi.h>
 #pragma warning(pop)
 #endif
