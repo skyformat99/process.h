@@ -10,6 +10,8 @@ environment:
     - VSVERSION: Visual Studio 11 2012
     - VSVERSION: Visual Studio 12 2013
     - VSVERSION: Visual Studio 14 2015
+    - VSVERSION: Visual Studio 15 2017
+      APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
 
 platform:
   - Win32
@@ -24,6 +26,6 @@ build_script:
   - cd build
   - if "%PLATFORM%"=="x64" cmake -G "%VSVERSION% Win64" ../test
   - if "%PLATFORM%"=="Win32" cmake -G "%VSVERSION%" ../test
-  - msbuild /m /p:Configuration="%CONFIGURATION%" /p:Platform="%PLATFORM%" utest.sln
+  - msbuild /m /p:Configuration="%CONFIGURATION%" /p:Platform="%PLATFORM%" process.sln
   - cd %CONFIGURATION%
   - utest_test.exe
