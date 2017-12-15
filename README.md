@@ -1,6 +1,6 @@
 # process.h #
 
-[![Build status](https://ci.appveyor.com/api/projects/status/i2u3a0pw4pxprrcv?svg=true)](https://ci.appveyor.com/project/sheredom/process-h)
+[![Build status](https://ci.appveyor.com/api/projects/status/0sm37thiavt9juee?svg=true)](https://ci.appveyor.com/project/sheredom/process-h)
 
 [![Build Status](https://travis-ci.org/sheredom/process.h.svg)](https://travis-ci.org/sheredom/process.h)
 
